@@ -21,7 +21,7 @@ requirements:
   run:
     - python
     - rioxarray >=0.0.30
-    - jupyter_server >=0.3.0
+    - jupyter_server >=0.2.0
     - ipyleaflet >=0.13.1
     - pillow >=7
     - matplotlib-base >=3
