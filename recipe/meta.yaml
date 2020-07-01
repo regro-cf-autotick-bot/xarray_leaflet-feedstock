@@ -1,5 +1,5 @@
 {% set name = "xarray_leaflet" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d418c243166e0967ea34623b9253143c7e124e70fea2b87210333d7d0a7ee8d0
+  sha256: 9327f0ddfd9d3bff908fb4cd0ae85aedc71f9df989e0085ed324ce8ff31a41b9
 
 build:
   noarch: python
@@ -20,14 +20,13 @@ requirements:
     - pip
   run:
     - python
-    - xarray
-    - jupyter_server
-    - ipyleaflet >=0.13.0
-    - pillow
-    - matplotlib-base
-    - rasterio
-    - affine
-    - mercantile
+    - rioxarray >=0.0.30
+    - jupyter_server >=0.2.0
+    - ipyleaflet >=0.13.1
+    - pillow >=7
+    - matplotlib-base >=3
+    - affine >=2
+    - mercantile >=1
 
 test:
   imports:
