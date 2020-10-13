@@ -5,9 +5,11 @@ Home: https://github.com/davidbrochart/xarray-leaflet
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xarray_leaflet-feedstock/blob/master/LICENSE.txt)
 
 Summary: An xarray extension for tiled map plotting.
+
+Development: https://github.com/davidbrochart/xarray-leaflet
 
 xarray-leaflet uses ipyleaflet as a plotting backend for data arrays. It generates map tiles
 on the fly, possibly using Dask's lazy evaluation system and Zarr's chunked data storage, and
